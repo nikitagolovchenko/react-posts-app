@@ -62,8 +62,6 @@ export const userLogin = (): AppThunk => dispatch => {
             photoURL: user.photoURL as string,
           })
         );
-
-        console.log('login');
       }
     })
     .catch(error => {
