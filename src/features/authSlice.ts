@@ -2,13 +2,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AppThunk, RootState } from '../app/store';
 import { auth, provider } from './../app/firebase';
 
-interface User {
-  uid: string;
-  displayName: string;
-  email: string;
-  photoURL: string;
-}
-
 interface AuthState {
   user: User;
   authorized: boolean;

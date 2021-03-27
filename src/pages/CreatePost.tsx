@@ -11,16 +11,6 @@ import {
 } from '@material-ui/core';
 import { DropzoneArea } from 'material-ui-dropzone';
 
-interface FileImage {
-  lastModified: number;
-  lastModifiedDate: Date;
-  name: string;
-  path: string;
-  size: number;
-  type: string;
-  webkitRelativePath: string;
-}
-
 const useStyles = makeStyles((theme: Theme) => ({
   formItem: {
     marginBottom: theme.spacing(3),

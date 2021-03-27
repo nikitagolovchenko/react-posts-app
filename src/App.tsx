@@ -5,12 +5,14 @@ import { useDispatch } from 'react-redux';
 import { userInitLogin } from './features/authSlice';
 import PrivateRoute from './components/PrivateRoute';
 import CreatePost from './pages/CreatePost';
+import { getPosts } from './features/postsSlice';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(userInitLogin());
+    dispatch(getPosts());
   }, [dispatch])
 
   return (
