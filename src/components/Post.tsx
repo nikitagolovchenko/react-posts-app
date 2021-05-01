@@ -18,7 +18,6 @@ import moment from 'moment';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      maxWidth: 345,
     },
     media: {
       height: 0,

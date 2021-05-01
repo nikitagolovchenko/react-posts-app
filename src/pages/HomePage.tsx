@@ -3,7 +3,7 @@ import Layout from './../components/Layout';
 import { useSelector } from 'react-redux';
 import { selectPosts } from '../features/postsSlice';
 import { Box, CircularProgress } from '@material-ui/core';
-import Post from '../components/Post';
+import PostsList from '../components/PostsList';
 
 const HomePage: React.FC = () => {
   const posts = useSelector(selectPosts);
@@ -15,9 +15,7 @@ const HomePage: React.FC = () => {
           <CircularProgress />
         </Box>
       )}
-      {posts.posts.map((post, index) => (
-        <Post key={index} {...post} />
-      ))}
+      <PostsList posts={posts.posts}/>
     </Layout>
   );
 };

@@ -50,7 +50,7 @@ const CreatePost: React.FC = () => {
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    console.log(postTitle, filePhoto?.path, content);
+    console.log(postTitle, filePhoto, content);
   };
 
   return (
